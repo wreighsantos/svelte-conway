@@ -1,27 +1,15 @@
 <script lang="ts">
-import BoardComponent from "./conway/BoardComponent.svelte";
+  import BoardComponent from "./conway/BoardComponent.svelte";
 </script>
 
 <main>
-  <BoardComponent/>
+  <div class="Container">
+    <BoardComponent/>
+  </div>
 </main>
 
-<style>
-
-  :global(*, ::after, ::before) {
-    box-sizing: border-box;
-  }
-
-  main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+<style lang="scss">
+  .Container {
+    overflow-x: hidden;
   }
 </style>
